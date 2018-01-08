@@ -8,7 +8,7 @@ item.ItemRuby.1.name=Ruby dust
 item.ItemRuby.2.name=Ruby plate
 
 item.itemLightOpticDust.name=Shining optical dust
-block.blockLightGlass.name=Optical light glass
+tile.blockLightGlass.name=Optical light glass
 
 //tabs
 itemGroup.JASItems=Just Another Sapphirepack Items

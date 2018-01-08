@@ -8,7 +8,7 @@ item.ItemRuby.1.name=Измельченный рубин
 item.ItemRuby.2.name=Рубиновая пластина
 
 item.itemLightOpticDust.name=Shining optical dust
-block.blockLightGlass.name=Optical light glass
+tile.blockLightGlass.name=Optical light glass
 
 //tabs
 itemGroup.JASItems=Just Another Sapphirepack Items
