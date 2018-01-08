@@ -1,0 +1,16 @@
+[
+{
+  "modid": "jas",
+  "name": "Just Another Sapphirepack",
+  "description": "Items for sapphirecraft.com",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["FoliantLight"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

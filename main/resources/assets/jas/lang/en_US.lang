@@ -1,0 +1,15 @@
+//items
+item.ItemSapphire.0.name=Сапфир
+item.ItemSapphire.1.name=Измельченный сапфир
+item.ItemSapphire.2.name=Сапфировая пластина
+
+item.ItemRuby.0.name=Рубин
+item.ItemRuby.1.name=Измельченный рубин
+item.ItemRuby.2.name=Рубиновая пластина
+
+item.itemLightOpticDust.name=Shining optical dust
+block.blockLightGlass.name=Optical light glass
+
+//tabs
+itemGroup.JASItems=Just Another Sapphirepack Items
+itemGroup.JASBlocks=Just Another Sapphirepack Blocks
