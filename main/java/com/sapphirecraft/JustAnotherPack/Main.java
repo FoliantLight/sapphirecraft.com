@@ -61,7 +61,11 @@ public class Main {
 		GameRegistry.registerItem(itemSapphire, "itemSapphire");
 		GameRegistry.registerItem(itemRuby, "itemRuby");
 		GameRegistry.registerItem(itemLightOpticDust, "itemLightOpticDust");
+		GameRegistry.registerItem(itemRitualWand, "itemRitualWand");
+		
 		GameRegistry.registerBlock(blockLightGlass, "blockLightGlass");
+		GameRegistry.registerBlock(blockRubyOre, "blockRubyOre");
+		GameRegistry.registerBlock(blockSapphireOre, "blockSapphireOre");
 
 		ChestGenHooks.addItem(ChestGenHooks.PYRAMID_DESERT_CHEST, new WeightedRandomChestContent(new ItemStack(Main.itemSapphire), 1, 3, 3));
 		ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new WeightedRandomChestContent(new ItemStack(Main.itemRuby), 1, 3, 3));

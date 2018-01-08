@@ -7,5 +7,8 @@ public class BlockRubyOre extends Block {
 	protected BlockRubyOre()
 	{
 		super(Material.rock);
+		this.setBlockTextureName(Main.MODID + ":jasRubyOre");
+		this.setHardness(1.5F);
+		this.setBlockName("blockRubyOre");
 	}
 }
