@@ -26,7 +26,11 @@ public class Main {
     public static Item itemSapphire;
     public static Item itemRuby;
     public static Item itemLightOpticDust;
+    public static Item itemRitualWand;
+    
     public static Block blockLightGlass;
+    public static Block blockRubyOre;
+	public static Block blockSapphireOre;
 	
 	public static CreativeTabs jaspackItems = new CreativeTabs("JASItems"){
 		@SideOnly(CLIENT)
@@ -48,8 +52,11 @@ public class Main {
         itemSapphire = new MetaItem("Sapphire", 3).setCreativeTab(jaspackItems);
 		itemRuby = new MetaItem("Ruby", 3).setCreativeTab(jaspackItems);
 		itemLightOpticDust = new ItemLigthOpticDust().setCreativeTab(jaspackItems);
+		itemRitualWand = new ItemRitualWand().setCreativeTab(jaspackItems);
 		
 		blockLightGlass = new BlockLightGlass().setCreativeTab(jaspackBlocks);
+		blockSapphireOre = new BlockSapphireOre().setCreativeTab(jaspackBlocks);
+		blockRubyOre = new BlockRubyOre().setCreativeTab(jaspackBlocks);
 
 		GameRegistry.registerItem(itemSapphire, "itemSapphire");
 		GameRegistry.registerItem(itemRuby, "itemRuby");
