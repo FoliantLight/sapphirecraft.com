@@ -63,7 +63,7 @@ public class Main {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	
+    	Some text for test
     	MinecraftForge.EVENT_BUS.register(new EventHandler());
     }*/
 }
