@@ -1,5 +1,6 @@
-package com.sapphirecraft.JustAnotherPack;
+package com.sapphirecraft.JustAnotherPack.items;
 
+import com.sapphirecraft.JustAnotherPack.Main;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;

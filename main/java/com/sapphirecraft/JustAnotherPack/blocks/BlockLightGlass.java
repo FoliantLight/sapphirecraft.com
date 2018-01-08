@@ -1,5 +1,6 @@
-package com.sapphirecraft.JustAnotherPack;
+package com.sapphirecraft.JustAnotherPack.blocks;
 
+import com.sapphirecraft.JustAnotherPack.Main;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;

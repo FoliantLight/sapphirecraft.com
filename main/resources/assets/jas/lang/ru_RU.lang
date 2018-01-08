@@ -11,6 +11,8 @@ item.itemLightOpticDust.name=Светящаяся оптическая пыль
 
 //blocks
 tile.blockLightGlass.name=Оптическое светостекло
+tile.blockRubyOre.name=Рубиновая руда
+tile.blockSapphireOre.name=Сапфировая руда
 
 //tabs
 itemGroup.JASItems=Just Another Sapphirepack Items

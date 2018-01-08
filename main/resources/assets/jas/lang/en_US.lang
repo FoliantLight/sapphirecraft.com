@@ -1,14 +1,18 @@
 //items
-item.ItemSapphire.0.name=Сапфир
-item.ItemSapphire.1.name=Измельченный сапфир
-item.ItemSapphire.2.name=Сапфировая пластина
+item.ItemSapphire.0.name=Sapphire
+item.ItemSapphire.1.name=Sapphire dust
+item.ItemSapphire.2.name=Sapphire plate
 
-item.ItemRuby.0.name=Рубин
-item.ItemRuby.1.name=Измельченный рубин
-item.ItemRuby.2.name=Рубиновая пластина
+item.ItemRuby.0.name=Ruby
+item.ItemRuby.1.name=Ruby dust
+item.ItemRuby.2.name=Ruby plate
 
 item.itemLightOpticDust.name=Shining optical dust
+
+//blocks
 tile.blockLightGlass.name=Optical light glass
+tile.blockRubyOre.name=Ruby ore
+tile.blockSapphireOre.name=Sapphire ore
 
 //tabs
 itemGroup.JASItems=Just Another Sapphirepack Items

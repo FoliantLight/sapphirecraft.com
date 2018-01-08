@@ -1,5 +1,6 @@
 package com.sapphirecraft.JustAnotherPack;
 
+import com.sapphirecraft.JustAnotherPack.blocks.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -23,9 +24,9 @@ public class RitualCore {
 			}
 			
 			if(block == Blocks.lapis_ore)
-				world.setBlock(x, y, z, Main.blockSapphireOre);
+				world.setBlock(x, y, z, ModBlocks.blockSapphireOre);
 			if(block == Blocks.redstone_ore)
-				world.setBlock(x,y,z, Main.blockRubyOre);
+				world.setBlock(x,y,z, ModBlocks.blockRubyOre);
 		}
 	}
 	

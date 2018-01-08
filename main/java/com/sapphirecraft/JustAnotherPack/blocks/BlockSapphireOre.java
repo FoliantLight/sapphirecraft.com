@@ -1,5 +1,6 @@
-package com.sapphirecraft.JustAnotherPack;
+package com.sapphirecraft.JustAnotherPack.blocks;
 
+import com.sapphirecraft.JustAnotherPack.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 

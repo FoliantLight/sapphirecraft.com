@@ -1,5 +1,6 @@
-package com.sapphirecraft.JustAnotherPack;
+package com.sapphirecraft.JustAnotherPack.items;
 
+import com.sapphirecraft.JustAnotherPack.Main;
 import net.minecraft.item.Item;
 
 public class ItemLigthOpticDust extends Item {
