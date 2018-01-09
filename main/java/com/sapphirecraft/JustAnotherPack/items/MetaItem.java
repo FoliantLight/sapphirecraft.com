@@ -1,6 +1,8 @@
 package com.sapphirecraft.JustAnotherPack.items;
 
 import com.sapphirecraft.JustAnotherPack.Main;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,6 +27,7 @@ public class MetaItem extends Item {
     }
     
     @Override
+    @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister reg) {
         for (int i = 0; i < icons.length; i ++) {
             this.icons[i] = reg.registerIcon(Main.MODID + ":jas" + itemMainName + "." + i);
