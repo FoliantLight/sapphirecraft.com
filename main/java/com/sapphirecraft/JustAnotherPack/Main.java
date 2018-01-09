@@ -15,7 +15,7 @@ public class Main {
 
     public static final String MODID = "JAS";
     public static final String NAME = "Just Another Sapphirepack";
-    public static final String VERSION = "0.0.1";
+    public static final String VERSION = "0.0.2";
 	
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)

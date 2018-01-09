@@ -7,6 +7,6 @@ public class ItemRitualWand extends Item {
 	protected ItemRitualWand()
 	{
 		this.setUnlocalizedName("someCoolNameOfRitualWand");
-		this.setTextureName(Main.MODID + ":jasLigthOpticDust");
+		this.setTextureName(Main.MODID + ":jasChangeOreWand");
 	}
 }
