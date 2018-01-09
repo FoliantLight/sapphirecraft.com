@@ -6,6 +6,9 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
 public class RitualCore {
+	
+	private static int blocksForSuccess = 4;
+	
 	public static void ritualOreToOre(World world, int x, int y, int z, Block block)
 	{
 		for(int i = -1; i < 2; i++)
@@ -21,7 +24,7 @@ public class RitualCore {
 			}
 		}
 		
-		if(getCountOfBlock(world,x,y,z,block) >= 9)
+		if(getCountOfBlock(world,x,y,z,block) >= blocksForSuccess)
 		{
 			int count = 0;
 			for(int i = -1; i < 2; i++)
@@ -29,19 +32,23 @@ public class RitualCore {
 				for (int j = -1; j < 2; j++)
 				{
 					for(int a = -1; a < 2; a++) {
-						if (world.getBlock(x + i, y + j, z + a) == block && count < 9)
+						if (world.getBlock(x + i, y + j, z + a) == block && count < blocksForSuccess)
 						{
 							world.setBlock(x+i,y+j,z+a, Blocks.air);
 							count++;
+							if (count == blocksForSuccess)
+							{
+								if(block == Blocks.lapis_ore)
+									world.setBlock(x + i, y + j, z + a,
+											ModBlocks.blockSapphireOre);
+								else if(block == Blocks.redstone_ore)
+									world.setBlock(x + i, y + j, z + a,
+											ModBlocks.blockRubyOre);
+							}
 						}
 					}
 				}
 			}
-			
-			if(block == Blocks.lapis_ore)
-				world.setBlock(x, y, z, ModBlocks.blockSapphireOre);
-			else if(block == Blocks.redstone_ore)
-				world.setBlock(x,y,z, ModBlocks.blockRubyOre);
 		}
 	}
 	

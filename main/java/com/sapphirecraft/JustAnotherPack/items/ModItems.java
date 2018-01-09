@@ -10,6 +10,7 @@ public class ModItems {
     public static Item itemRuby;
     public static Item itemLightOpticDust;
     public static Item itemRitualWand;
+    public static Item itemChangeCore;
 
     public static void init(){
         GameRegistry.registerItem(itemSapphire = new MetaItem("Sapphire", 3).setCreativeTab(jaspackItems),
@@ -20,5 +21,6 @@ public class ModItems {
                 "itemLightOpticDust");
         GameRegistry.registerItem(itemRitualWand = new ItemRitualWand().setCreativeTab(jaspackItems),
                 "itemRitualWand");
+        GameRegistry.registerItem(itemChangeCore = new ItemChangeCore().setCreativeTab(jaspackItems), "itemChangeCore");
     }
 }

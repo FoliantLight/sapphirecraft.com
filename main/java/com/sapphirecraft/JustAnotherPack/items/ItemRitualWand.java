@@ -26,13 +26,11 @@ public class ItemRitualWand extends Item {
 		
 		if (interactedBlock == Blocks.lapis_ore) {
 			RitualCore.ritualOreToOre(world, x, y, z, Blocks.lapis_ore);
-			System.out.print("Лазурит");
 			return true;
 		}
 		
 		if (interactedBlock == Blocks.redstone_ore || interactedBlock == Blocks.lit_redstone_ore) {
 			RitualCore.ritualOreToOre(world, x, y, z, Blocks.redstone_ore);
-			System.out.print("Красная пыль");
 			return true;
 		}
 		
