@@ -8,11 +8,11 @@ import net.minecraft.world.World;
 public class RitualCore {
 	public static void ritualOreToOre(World world, int x, int y, int z, Block block)
 	{
-		for(int i = -2; i < 3; i++)
+		for(int i = -1; i < 2; i++)
 		{
-			for (int j = -2; j < 3; j++)
+			for (int j = -1; j < 2; j++)
 			{
-				for(int a = -2; a < 3; a++) {
+				for(int a = -1; a < 2; a++) {
 					if (world.getBlock(x + i, y + j, z + a) == Blocks.lit_redstone_ore)
 					{
 						world.setBlock(x+i,y+j,z+a, Blocks.redstone_ore);
@@ -21,16 +21,18 @@ public class RitualCore {
 			}
 		}
 		
-		if(getCountOfBlock(world,x,y,z,block) == 9)
+		if(getCountOfBlock(world,x,y,z,block) >= 9)
 		{
-			for(int i = -2; i < 3; i++)
+			int count = 0;
+			for(int i = -1; i < 2; i++)
 			{
-				for (int j = -2; j < 3; j++)
+				for (int j = -1; j < 2; j++)
 				{
-					for(int a = -2; a < 3; a++) {
-						if (world.getBlock(x + i, y + j, z + a) == block)
+					for(int a = -1; a < 2; a++) {
+						if (world.getBlock(x + i, y + j, z + a) == block && count < 9)
 						{
 							world.setBlock(x+i,y+j,z+a, Blocks.air);
+							count++;
 						}
 					}
 				}
@@ -47,11 +49,11 @@ public class RitualCore {
 	{
 		int count = 0;
 		
-		for(int i = -2; i < 3; i++)
+		for(int i = -1; i < 2; i++)
 		{
-			for (int j = -2; j < 3; j++)
+			for (int j = -1; j < 2; j++)
 			{
-				for(int a = -2; a < 3; a++) {
+				for(int a = -1; a < 2; a++) {
 					if (world.getBlock(x + i, y + j, z + a) == block)
 					{
 						count++;
