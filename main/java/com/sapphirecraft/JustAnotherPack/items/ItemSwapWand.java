@@ -5,6 +5,7 @@ import com.sapphirecraft.JustAnotherPack.SwapCore;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -12,7 +13,7 @@ import net.minecraft.world.World;
 public class ItemSwapWand extends Item {
 	protected ItemSwapWand()
 	{
-		this.setUnlocalizedName("someCoolNameOfRitualWand");
+		this.setUnlocalizedName("SwapWand");
 		this.setTextureName(Main.MODID + ":jasChangeOreWand");
 		this.setMaxStackSize(1);
 	}
@@ -36,4 +37,8 @@ public class ItemSwapWand extends Item {
 		return false;
 	}
 	
+	@Override
+	public EnumRarity getRarity(ItemStack stack) {
+		return EnumRarity.uncommon;
+	}
 }

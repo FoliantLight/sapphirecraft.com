@@ -7,7 +7,11 @@ item.ItemRuby.0.name=Ruby
 item.ItemRuby.1.name=Ruby dust
 item.ItemRuby.2.name=Ruby plate
 
-item.itemLightOpticDust.name=Shining optical dust
+item.ItemOther.0.name=Заготовка жезла
+item.ItemOther.1.name=Ядро обмена
+
+item.itemShiningMix.name=Светящаяся смесь
+item.SwapWand.name=Жезл обмена
 
 //blocks
 tile.blockLightGlass.name=Optical light glass

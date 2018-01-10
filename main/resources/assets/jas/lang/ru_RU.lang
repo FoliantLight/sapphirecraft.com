@@ -7,7 +7,11 @@ item.ItemRuby.0.name=Рубин
 item.ItemRuby.1.name=Измельченный рубин
 item.ItemRuby.2.name=Рубиновая пластина
 
-item.itemLightOpticDust.name=Светящаяся оптическая пыль
+item.ItemOther.0.name=Железная заготовка
+item.ItemOther.1.name=Ядро обмена
+
+item.itemShiningMix.name=Светящаяся смесь
+item.SwapWand.name=Жезл обмена
 
 //blocks
 tile.blockLightGlass.name=Оптическое светостекло

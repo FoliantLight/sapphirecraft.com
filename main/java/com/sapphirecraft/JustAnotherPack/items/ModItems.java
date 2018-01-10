@@ -20,7 +20,7 @@ public class ModItems {
                 "itemRuby");
         GameRegistry.registerItem(itemOther = new MetaItem("Other", 2).setCreativeTab(jaspackItems),
 				"itemOther");
-        GameRegistry.registerItem(itemLightOpticDust = new ItemLigthOpticDust().setCreativeTab(jaspackItems),
+        GameRegistry.registerItem(itemLightOpticDust = new ItemShiningMix().setCreativeTab(jaspackItems),
                 "itemLightOpticDust");
         GameRegistry.registerItem(itemRitualWand = new ItemSwapWand().setCreativeTab(jaspackItems),
                 "itemRitualWand");
