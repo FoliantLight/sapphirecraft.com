@@ -12,7 +12,7 @@ public class TabItems extends CreativeTabs {
 
     @Override
     public Item getTabIconItem() {
-        return ModItems.itemSapphire;
+        return ModItems.itemShiningMix;
     }
 
 }

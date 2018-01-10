@@ -9,8 +9,8 @@ public class ModItems {
     public static Item itemSapphire;
     public static Item itemRuby;
     public static Item itemOther;
-    public static Item itemLightOpticDust;
-    public static Item itemRitualWand;
+    public static Item itemShiningMix;
+    public static Item itemSwapWand;
 
 
     public static void init(){
@@ -20,9 +20,9 @@ public class ModItems {
                 "itemRuby");
         GameRegistry.registerItem(itemOther = new MetaItem("Other", 2).setCreativeTab(jaspackItems),
 				"itemOther");
-        GameRegistry.registerItem(itemLightOpticDust = new ItemShiningMix().setCreativeTab(jaspackItems),
-                "itemLightOpticDust");
-        GameRegistry.registerItem(itemRitualWand = new ItemSwapWand().setCreativeTab(jaspackItems),
-                "itemRitualWand");
+        GameRegistry.registerItem(itemShiningMix = new ItemShiningMix().setCreativeTab(jaspackItems),
+                "itemShiningMix");
+        GameRegistry.registerItem(itemSwapWand = new ItemSwapWand().setCreativeTab(jaspackItems),
+                "itemSwapWand");
     }
 }

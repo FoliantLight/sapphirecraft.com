@@ -14,7 +14,7 @@ public class ItemSwapWand extends Item {
 	protected ItemSwapWand()
 	{
 		this.setUnlocalizedName("SwapWand");
-		this.setTextureName(Main.MODID + ":jasChangeOreWand");
+		this.setTextureName(Main.MODID + ":jasSwapWand");
 		this.setMaxStackSize(1);
 	}
 	
@@ -41,4 +41,5 @@ public class ItemSwapWand extends Item {
 	public EnumRarity getRarity(ItemStack stack) {
 		return EnumRarity.uncommon;
 	}
+	
 }
