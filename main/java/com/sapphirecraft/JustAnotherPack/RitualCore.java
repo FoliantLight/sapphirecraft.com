@@ -7,9 +7,7 @@ import net.minecraft.world.World;
 
 public class RitualCore {
 	
-	private static int blocksForSuccess = 4;
-	
-	public static void ritualOreToOre(World world, int x, int y, int z, Block block)
+	public static void ritualOreToOre(World world, int x, int y, int z, Block block, int blocksForSuccess)
 	{
 		for(int i = -1; i < 2; i++)
 		{

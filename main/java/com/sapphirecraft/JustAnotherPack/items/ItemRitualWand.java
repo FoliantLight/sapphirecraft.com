@@ -25,12 +25,12 @@ public class ItemRitualWand extends Item {
 		Block interactedBlock = world.getBlock(x, y, z);
 		
 		if (interactedBlock == Blocks.lapis_ore) {
-			RitualCore.ritualOreToOre(world, x, y, z, Blocks.lapis_ore);
+			RitualCore.ritualOreToOre(world, x, y, z, Blocks.lapis_ore,3);
 			return true;
 		}
 		
 		if (interactedBlock == Blocks.redstone_ore || interactedBlock == Blocks.lit_redstone_ore) {
-			RitualCore.ritualOreToOre(world, x, y, z, Blocks.redstone_ore);
+			RitualCore.ritualOreToOre(world, x, y, z, Blocks.redstone_ore, 3);
 			return true;
 		}
 		
