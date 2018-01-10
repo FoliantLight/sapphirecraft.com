@@ -6,8 +6,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class BlockLightGlass extends Block {
-	protected BlockLightGlass() {
+public class BlockShiningGlass extends Block {
+	protected BlockShiningGlass() {
 		super(Material.glass);
 		this.setLightLevel(1.0f);
 		this.setBlockTextureName(Main.MODID + ":jasLightGlass");

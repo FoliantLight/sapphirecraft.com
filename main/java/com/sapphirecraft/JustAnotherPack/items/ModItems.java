@@ -8,19 +8,21 @@ import static com.sapphirecraft.JustAnotherPack.Tabs.ModTabs.jaspackItems;
 public class ModItems {
     public static Item itemSapphire;
     public static Item itemRuby;
+    public static Item itemOther;
     public static Item itemLightOpticDust;
     public static Item itemRitualWand;
-    public static Item itemChangeCore;
+
 
     public static void init(){
         GameRegistry.registerItem(itemSapphire = new MetaItem("Sapphire", 3).setCreativeTab(jaspackItems),
                 "itemSapphire");
         GameRegistry.registerItem(itemRuby = new MetaItem("Ruby", 3).setCreativeTab(jaspackItems),
                 "itemRuby");
+        GameRegistry.registerItem(itemOther = new MetaItem("Other", 2).setCreativeTab(jaspackItems),
+				"itemOther");
         GameRegistry.registerItem(itemLightOpticDust = new ItemLigthOpticDust().setCreativeTab(jaspackItems),
                 "itemLightOpticDust");
-        GameRegistry.registerItem(itemRitualWand = new ItemRitualWand().setCreativeTab(jaspackItems),
+        GameRegistry.registerItem(itemRitualWand = new ItemSwapWand().setCreativeTab(jaspackItems),
                 "itemRitualWand");
-        GameRegistry.registerItem(itemChangeCore = new ItemChangeCore().setCreativeTab(jaspackItems), "itemChangeCore");
     }
 }

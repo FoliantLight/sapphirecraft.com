@@ -5,10 +5,11 @@ import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
-public class RitualCore {
+public class SwapCore {
 	
-	public static void ritualOreToOre(World world, int x, int y, int z, Block block, int blocksForSuccess)
+	public static void swapOre(World world, int x, int y, int z, Block block, int blocksForSuccess)
 	{
+		
 		for(int i = -1; i < 2; i++)
 		{
 			for (int j = -1; j < 2; j++)
@@ -32,16 +33,19 @@ public class RitualCore {
 					for(int a = -1; a < 2; a++) {
 						if (world.getBlock(x + i, y + j, z + a) == block && count < blocksForSuccess)
 						{
-							world.setBlock(x+i,y+j,z+a, Blocks.air);
+							int fortune = world.rand.nextInt(100);
+							
+							if(fortune > 90) {
+								setBlocks(world, x + i, y + j, z + a, block);
+							}
+							else {
+								world.setBlock(x + i, y + j, z + a, Blocks.air);
+							}
 							count++;
+							
 							if (count == blocksForSuccess)
 							{
-								if(block == Blocks.lapis_ore)
-									world.setBlock(x + i, y + j, z + a,
-											ModBlocks.blockSapphireOre);
-								else if(block == Blocks.redstone_ore)
-									world.setBlock(x + i, y + j, z + a,
-											ModBlocks.blockRubyOre);
+								setBlocks(world,x+i,y+j,z+a,block);
 							}
 						}
 					}
@@ -67,5 +71,13 @@ public class RitualCore {
 			}
 		}
 		return count;
+	}
+	
+	private static void setBlocks(World world, int x, int y, int z, Block block)
+	{
+		if(block == Blocks.lapis_ore)
+			world.setBlock(x, y, z,	ModBlocks.blockSapphireOre);
+		else if(block == Blocks.redstone_ore)
+			world.setBlock(x, y, z,	ModBlocks.blockRubyOre);
 	}
 }

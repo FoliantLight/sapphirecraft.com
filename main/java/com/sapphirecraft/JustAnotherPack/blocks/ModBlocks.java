@@ -11,7 +11,7 @@ public class ModBlocks {
     public static Block blockSapphireOre;
 
     public static void init(){
-        GameRegistry.registerBlock(blockLightGlass = new BlockLightGlass().setCreativeTab(jaspackBlocks),
+        GameRegistry.registerBlock(blockLightGlass = new BlockShiningGlass().setCreativeTab(jaspackBlocks),
                 "blockLightGlass");
         GameRegistry.registerBlock(blockRubyOre = blockRubyOre = new BlockRubyOre().setCreativeTab(jaspackBlocks),
                 "blockRubyOre");
