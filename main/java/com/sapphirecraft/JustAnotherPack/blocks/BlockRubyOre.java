@@ -20,7 +20,7 @@ public class BlockRubyOre extends Block {
 	{
 		super(Material.rock);
 		this.setBlockTextureName(Main.MODID + ":jasRubyOre");
-		this.setHardness(1.5F);
+		this.setHardness(2F);
 		this.setBlockName("blockRubyOre");
 		
 	}
@@ -39,6 +39,6 @@ public class BlockRubyOre extends Block {
 	
 	@Override
 	public int getExpDrop(IBlockAccess world, int metadata, int fortune) {
-		return 500;
+		return 20;
 	}
 }

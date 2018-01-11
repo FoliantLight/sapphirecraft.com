@@ -18,7 +18,7 @@ public class BlockSapphireOre extends Block {
 	{
 		super(Material.rock);
 		this.setBlockTextureName(Main.MODID + ":jasSapphireOre");
-		this.setHardness(1.5F);
+		this.setHardness(2F);
 		this.setBlockName("blockSapphireOre");
 	}
 	
