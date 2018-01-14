@@ -13,6 +13,8 @@ item.ItemOther.1.name=Swap core
 item.itemShiningMix.name=Shining mix
 item.SwapWand.name=Swap staff
 
+item.itemConstrictor.name=§aConstrictor wand
+
 //blocks
 tile.blockLightGlass.name=Optical light glass
 tile.blockRubyOre.name=Ruby ore
@@ -23,4 +25,4 @@ itemGroup.JASItems=Just Another Sapphirepack Items
 itemGroup.JASBlocks=Just Another Sapphirepack Blocks
 
 //messages
-jas.msg.itemIsBroken=Предмет утерял свой заряд
+jas.msg.itemIsBroken=The item is discharged

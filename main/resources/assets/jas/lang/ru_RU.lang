@@ -13,14 +13,16 @@ item.ItemOther.1.name=Ядро обмена
 item.itemShiningMix.name=Светящаяся смесь
 item.SwapWand.name=Жезл обмена
 
+item.itemConstrictor.name=§aПосох сжатия
+
 //blocks
 tile.blockLightGlass.name=Оптическое светостекло
 tile.blockRubyOre.name=Рубиновая руда
 tile.blockSapphireOre.name=Сапфировая руда
 
 //tabs
-itemGroup.JASItems=Just Another Sapphirepack Items
-itemGroup.JASBlocks=Just Another Sapphirepack Blocks
+itemGroup.JASItems=Just Another Sapphirepack Предметы
+itemGroup.JASBlocks=Just Another Sapphirepack Блоки
 
 //messages
 jas.msg.itemIsBroken=Предмет утерял свой заряд
