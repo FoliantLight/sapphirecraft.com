@@ -3,14 +3,19 @@ package com.sapphirecraft.JustAnotherPack.items;
 import com.sapphirecraft.JustAnotherPack.Main;
 import com.sapphirecraft.JustAnotherPack.SwapCore;
 import net.minecraft.block.Block;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.ChatComponentTranslation;
+import net.minecraft.util.ChatStyle;
+import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class ItemSwapWand extends Item {
@@ -41,20 +46,23 @@ public class ItemSwapWand extends Item {
 	public boolean onItemUse(ItemStack stack, EntityPlayer player, World world,
 							 int x, int y, int z, int par7, float hitX, float hitY, float hitZ)
 	{
-		Block interactedBlock = world.getBlock(x, y, z);
-		
-		if (interactedBlock == Blocks.lapis_ore) {
-			SwapCore.swapOre(world, x, y, z, Blocks.lapis_ore,3);
-			stack.setItemDamage(stack.getItemDamage() + 1);
-			return true;
+		if(stack.getItemDamage() != stack.getMaxDamage()) {
+			Block interactedBlock = world.getBlock(x, y, z);
+			
+			if (interactedBlock == Blocks.lapis_ore) {
+				SwapCore.swapOre(world, x, y, z, Blocks.lapis_ore, 3);
+				stack.setItemDamage(stack.getItemDamage() + 1);
+				return true;
+			}
+			
+			if (interactedBlock == Blocks.redstone_ore || interactedBlock == Blocks.lit_redstone_ore) {
+				SwapCore.swapOre(world, x, y, z, Blocks.redstone_ore, 3);
+				stack.setItemDamage(stack.getItemDamage() + 1);
+				return true;
+			}
 		}
-		
-		if (interactedBlock == Blocks.redstone_ore || interactedBlock == Blocks.lit_redstone_ore) {
-			SwapCore.swapOre(world, x, y, z, Blocks.redstone_ore, 3);
-			stack.setItemDamage(stack.getItemDamage() + 1);
-			return true;
-		}
-		
+		else
+			player.addChatMessage(new ChatComponentTranslation("jas.msg.itemIsBroken"));
 		return false;
 	}
 	
@@ -72,4 +80,5 @@ public class ItemSwapWand extends Item {
 	public boolean showDurabilityBar(ItemStack stack) {
 		return true;
 	}
+	
 }

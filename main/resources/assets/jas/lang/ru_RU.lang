@@ -21,3 +21,6 @@ tile.blockSapphireOre.name=Сапфировая руда
 //tabs
 itemGroup.JASItems=Just Another Sapphirepack Items
 itemGroup.JASBlocks=Just Another Sapphirepack Blocks
+
+//messages
+jas.msg.itemIsBroken=Предмет утерял свой заряд
