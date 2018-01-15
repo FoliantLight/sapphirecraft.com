@@ -4,10 +4,12 @@ import com.sapphirecraft.JustAnotherPack.Tabs.ModTabs;
 import com.sapphirecraft.JustAnotherPack.blocks.ModBlocks;
 import com.sapphirecraft.JustAnotherPack.items.ModItems;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
+import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = Main.MODID, name = Main.NAME, version = Main.VERSION)
 
@@ -15,7 +17,7 @@ public class Main {
 
     public static final String MODID = "JAS";
     public static final String NAME = "Just Another Sapphirepack";
-    public static final String VERSION = "0.0.3";
+    public static final String VERSION = "0.0.4";
 	
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -30,10 +32,10 @@ public class Main {
 				new ItemStack(ModItems.itemRuby), 1, 3, 3));
 	}
 
-	/*@Mod.EventHandler
-    public void init(FMLInitializationEvent event)
+	@Mod.EventHandler
+    public void init(FMLInitializationEvent e)
     {
     	MinecraftForge.EVENT_BUS.register(new EventHandler());
-    }*/
+    }
     
 }
