@@ -12,6 +12,7 @@ public class ModItems {
     public static Item itemShiningMix;
     public static Item itemSwapWand;
     public static Item itemConstrictor;
+    public static Item itemBook;
 
 
     public static void init(){
@@ -27,5 +28,6 @@ public class ModItems {
                 "itemSwapWand");
         GameRegistry.registerItem(itemConstrictor = new ItemConstrictor().setCreativeTab(jaspackItems),
                 "itemConstrictor");
+        GameRegistry.registerItem(itemBook = new ItemBook().setCreativeTab(jaspackItems), "itemJASBook");
     }
 }
