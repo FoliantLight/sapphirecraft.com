@@ -16,6 +16,7 @@ public class ModItems {
 
 
     public static void init(){
+        GameRegistry.registerItem(itemBook = new ItemBook().setCreativeTab(jaspackItems), "itemJASBook");
         GameRegistry.registerItem(itemSapphire = new MetaItem("Sapphire", 3).setCreativeTab(jaspackItems),
                 "itemSapphire");
         GameRegistry.registerItem(itemRuby = new MetaItem("Ruby", 3).setCreativeTab(jaspackItems),
@@ -28,6 +29,5 @@ public class ModItems {
                 "itemSwapWand");
         GameRegistry.registerItem(itemConstrictor = new ItemConstrictor().setCreativeTab(jaspackItems),
                 "itemConstrictor");
-        GameRegistry.registerItem(itemBook = new ItemBook().setCreativeTab(jaspackItems), "itemJASBook");
     }
 }

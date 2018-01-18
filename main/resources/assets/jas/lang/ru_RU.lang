@@ -12,8 +12,8 @@ item.ItemOther.1.name=Ядро обмена
 
 item.itemShiningMix.name=Светящаяся смесь
 item.SwapWand.name=Жезл обмена
-
 item.itemConstrictor.name=§aПосох сжатия
+item.itemJASBook.name=Сохранившиеся записи
 
 //blocks
 tile.blockLightGlass.name=Оптическое светостекло
